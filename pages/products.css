@@ -1,0 +1,110 @@
+
+.latest-collection{
+    height: 100vh;
+    padding-top: 6rem;
+}
+
+.latest-collection h2{
+    text-align: center;
+}
+
+.latest-collection__container{
+    width: 592px;
+    margin: 2rem auto;
+    overflow: hidden;
+
+}
+
+.latest-collection__slider{
+    display: flex;
+    padding: 0;
+    width: 300%;
+    animation: slide 6s infinite alternate ease-in-out;
+
+}
+.latest-collection__slider li{
+    width: 100%;    
+}
+.latest-collection__slider li img{
+    width: 100%;
+}
+
+
+@keyframes slide{
+    0%{margin-left: 0%;}
+    30%{margin-left: 0%;}
+
+    35%{margin-left: -100%;}
+    65%{margin-left: -100%;}
+
+    70%{margin-left: -200%;}
+    100%{margin-left: -200%;}
+}
+
+/*sportswear*/
+
+.sportswear{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    justify-items: center;
+}
+
+.sportswear__card{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    border-radius: 27px;
+    color: #fff;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.sportswear__card:hover{
+    box-shadow: 0 0 10px 3px #463b3b;
+}
+
+.sportswear__male{
+    background: url('./../assets/images/card-male.jpg');
+}
+
+.sportswear__female{
+    background: url('./../assets/images/card-female.jpg');
+}
+
+.sportswear__card button{
+    margin: 1rem;
+    padding: 16px;
+    border: none;
+    border-radius: 12px;
+}
+.sportswear__card button:hover{
+    box-shadow: 0 0 10px 3px #d6c8c8;
+}
+
+.sportswear__card button:active{
+    transform: scale(.95);
+}
+
+@media (max-width:768px){
+    .sportswear__card{
+        width: 360px;
+        height: 360px;
+    }
+    .latest-collection__container{
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media (max-width:1200px){
+    .sportswear{
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr;
+
+    }
+
+}

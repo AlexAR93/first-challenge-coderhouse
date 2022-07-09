@@ -1,0 +1,248 @@
+body{
+    font-family: 'Poiret One', cursive;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+ul{
+    list-style: none;
+}
+
+header{
+    position: absolute;
+    width: 100%;
+}
+
+.header--static{
+    position: static;
+    background: #522b76;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+
+.nav__tittle{
+    display: flex;
+    align-items: center;
+}
+
+.nav__tittle img{
+    width: 75px;
+    padding-right: 1rem;
+}
+
+.nav__tittle h1{
+    text-shadow: 3px 3px 3px #000;
+
+}
+
+.nav__navbar i{
+    display: none;
+}
+
+.nav__links{
+    display: flex;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.nav__link{
+    padding: 0 1rem;
+}
+.nav__link:hover{
+    transform: scale(.95);
+    transition: transform 1s;
+}
+.nav__link a{
+    font-size: 1.5rem;
+}
+
+.nav__link a:hover{
+    color: #ff0;
+}
+
+
+/* MAIN */
+
+.main{
+    height: 100vh;    
+}
+
+ .main__home{
+    height: 100%;
+    background: url('./assets/images/background.jpg');
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 18%;
+}
+
+.main__item{
+    padding: .1rem 0;
+}
+
+.main__text{
+    align-self: flex-start;
+    text-align: center;
+    color: #fff;
+    text-shadow: 3px 3px 3px #000;
+}
+
+.main__text h2{
+    font-size: 4rem;
+}
+
+.main__text p{
+    font-size: 1.5rem;
+}
+
+.main__button{
+    align-self: flex-start;
+    display: inline-flex;
+    padding: .6rem 0;
+}
+.main__button a{
+    background: #8a2be2;
+    border-radius: 12px;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+}
+
+.main__button a:active{
+    transform: scale(.95);
+}
+
+/*BRANDS*/
+
+.brands{
+    height: 148px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brands__border{
+    height: 136px;
+    width: 95vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: #c0ccda84 solid 1.5px;
+}
+
+.brands__item{
+    padding: 0 1.5rem;
+}
+
+/*FOOTER*/
+
+.footer{
+    background: #606370;
+    display: grid;
+    grid-template-areas: "section1 section2 section3"
+                        "section4 section4 section4";
+    grid-template-rows: 94% 6%;
+    grid-gap: 0 3rem;
+    justify-content: flex-start;
+    color: #fff;
+}
+
+.footer__section{
+    margin-top: 3rem;
+}
+
+.footer__socialnetworks{
+    grid-area: section1;
+}
+
+.footer__socialnetworks ul{
+    display: flex;
+}
+.footer__socialnetworks ul li{
+    padding: .5rem;
+}
+
+.footer__quicklinks{
+    grid-area: section2;
+    text-align: center;
+}
+
+.footer__quicklinks h2{
+    padding-bottom: 1rem;
+}
+
+.footer__quicklinks ul li{
+    padding: .5rem 0;
+}
+
+.footer__reachus{
+    grid-area: section3;
+}
+
+.footer__reachus h2{
+    padding-bottom: 1rem;
+}
+
+.footer__reachus ul li{
+    padding: .5rem 0;
+}
+
+.footer__reachus ul li i{
+   color: #c7a7e6;
+}
+
+.footer__copyright{
+    grid-area: section4;
+    margin-top: 0;
+    font-size: .8rem;
+}
+
+@media (max-width:768px){
+    .nav__tittle img{
+        display: none;
+    }
+    
+    #nav__button{
+        display: contents;
+    }
+    .nav__links{
+        display: none;
+    }
+    #nav__button:hover + .nav__links{
+        display: contents;
+    }
+
+
+
+    .main__text{
+        align-self: center;
+    }
+    
+    .footer{
+        grid-template-areas: "section1 section1"
+                            "section2 section3"
+                            "section4 section4";
+        grid-template-rows: 20% 74% 6%;
+        justify-content: center;
+    }
+
+    .footer__socialnetworks img{
+        display: none;
+    }
+    .footer__socialnetworks ul{
+        justify-content: center;
+    }
+    .footer__socialnetworks p{
+        text-align: center;
+    }
+    
+}

@@ -1,0 +1,37 @@
+.main-blog{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.posts__container{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog-links{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+.links-blog{
+    margin: 3rem 0;
+}
+.links-blog ul li{
+    padding: .5rem 0;
+}
+.links-blog ul li a{
+    color: black;
+}
+
+@media (max-width:768px){
+    .main-blog{
+        grid-template-columns: 100%;
+    }
+}
