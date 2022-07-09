@@ -17,18 +17,19 @@
     <header class="header">
         <nav class="nav">
             <a href="./index.html" class="nav__tittle">
-                <img src="./assets/images/logo.webp" alt="log">
+                <img src="./../assets/images/logo.webp" alt="log">
                 <h1>WOLF Store</h1>
             </a>
-            <div class="nav__navbar" id="nav__navbar--active">
-                <i class="fa-solid fa-bars" id="nav__button"></i>
-                <ul class="nav__links">
-                    <li class="nav__link"><a href="./pages/about.html">About</a></li>
-                    <li class="nav__link"><a href="./pages/products.html">Products</a></li>
-                    <li class="nav__link"><a href="./pages/blog.html" target="_blank">Blog</a></li>
-                    <li class="nav__link"><a href="./pages/contact.html">Contact</a></li>
-                </ul>
-            </div>
+            <label class="nav__button" for="menu">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <input type="checkbox" name="menu" id="menu" class="nav__input">
+            <ul class="nav__links">
+                <li class="nav__link"><a href="./pages/about.html">About</a></li>
+                <li class="nav__link"><a href="./pages/products.html">Products</a></li>
+                <li class="nav__link"><a href="./pages/blog.html" target="_blank">Blog</a></li>
+                <li class="nav__link"><a href="./pages/contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
     <main class="main">

@@ -11,14 +11,15 @@ ul{
     list-style: none;
 }
 
-header{
+.header{
     position: absolute;
     width: 100%;
 }
 
 .header--static{
-    position: static;
-    background: #522b76;
+    position: sticky;
+    top: 0px;
+    background: #d4c3c3;
 }
 
 .nav{
@@ -26,6 +27,10 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 0 1.5rem;
+}
+
+.nav__button, .nav__input{
+    display: none;
 }
 
 .nav__tittle{
@@ -41,10 +46,6 @@ header{
 .nav__tittle h1{
     text-shadow: 3px 3px 3px #000;
 
-}
-
-.nav__navbar i{
-    display: none;
 }
 
 .nav__links{
@@ -207,20 +208,46 @@ header{
 }
 
 @media (max-width:768px){
+
+    .header{
+        position: sticky;
+        top: 0px;
+        background: #d4c3c3;
+ 
+    }
+
+    .nav__button{
+        display: contents;
+        font-size: 2rem;
+        color: #fff;
+    }
     .nav__tittle img{
         display: none;
     }
-    
-    #nav__button{
-        display: contents;
-    }
     .nav__links{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100vw;
+        height: 30vh;
+        position: absolute;
+        top: 100%;
+        right: 0px;
+        background: #d4c3c39f;
+        display: none;
+
+    }
+    .nav__links--violet{
+        background: #d4c3c3;
+    }
+    .nav__input{
         display: none;
     }
-    #nav__button:hover + .nav__links{
-        display: contents;
-    }
 
+    #menu:checked + .nav__links{
+        display: flex;
+    }
+    
 
 
     .main__text{
