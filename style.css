@@ -1,71 +1,54 @@
-body{
+.body{
     font-family: 'Poiret One', cursive;
-}
-
-a{
-    text-decoration: none;
-    color: #fff;
 }
 
 ul{
     list-style: none;
 }
 
-.header{
-    position: absolute;
-    width: 100%;
-}
-
-.header--static{
-    position: sticky;
-    top: 0px;
-    background: #d4c3c3;
-}
-
-.nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1.5rem;
-}
-
-.nav__button, .nav__input{
-    display: none;
+.navbar--color{
+    background: #D4C3C3;
 }
 
 .nav__tittle{
-    display: flex;
-    align-items: center;
+    text-decoration: none;
 }
-
+.nav__tittle:hover{
+    color: #fff;
+}
 .nav__tittle img{
     width: 75px;
     padding-right: 1rem;
 }
 
 .nav__tittle h1{
-    text-shadow: 3px 3px 3px #000;
-
+    display: none;
 }
 
-.nav__links{
-    display: flex;
-    text-shadow: 2px 2px 2px #000;
+.navbar__icon{
+    color: #fff;
+    font-size: 2rem;
 }
 
-.nav__link{
-    padding: 0 1rem;
-}
 .nav__link:hover{
     transform: scale(.95);
     transition: transform 1s;
 }
 .nav__link a{
+    text-decoration: none;
+    color: #f2f2f2;
     font-size: 1.5rem;
 }
 
 .nav__link a:hover{
     color: #ff0;
+} 
+
+#offcanvasNavbar{
+    background: #d4c3c3;
+}
+.offcanvas-title{
+    color: #f2f2f2;
 }
 
 
@@ -91,7 +74,7 @@ ul{
 }
 
 .main__text{
-    align-self: flex-start;
+    align-self: center;
     text-align: center;
     color: #fff;
     text-shadow: 3px 3px 3px #000;
@@ -105,18 +88,9 @@ ul{
     font-size: 1.5rem;
 }
 
-.main__button{
-    align-self: flex-start;
-    display: inline-flex;
-    padding: .6rem 0;
-}
 .main__button a{
-    background: #8a2be2;
     border-radius: 12px;
-    padding: 1rem 2rem;
-    font-size: 1.5rem;
 }
-
 .main__button a:active{
     transform: scale(.95);
 }
@@ -147,16 +121,24 @@ ul{
 /*FOOTER*/
 
 .footer{
-    background: #606370;
+    background: #6C757D;
     display: grid;
-    grid-template-areas: "section1 section2 section3"
-                        "section4 section4 section4";
-    grid-template-rows: 94% 6%;
+    grid-template-areas: "section1 section1"
+                            "section2 section3"
+                            "section4 section4";
+    grid-template-rows: 20% 74% 6%;
     grid-gap: 0 3rem;
-    justify-content: flex-start;
+    justify-content: center;
     color: #fff;
 }
 
+.footer a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer a:hover{
+    color: #ff0;
+}
 .footer__section{
     margin-top: 3rem;
 }
@@ -165,8 +147,19 @@ ul{
     grid-area: section1;
 }
 
+.footer__socialnetworks p{
+    text-align: center;
+    margin: 0;
+}
+
+.footer__socialnetworks img{
+    display: none;
+}
+
 .footer__socialnetworks ul{
+    padding: 0;
     display: flex;
+    justify-content: center;
 }
 .footer__socialnetworks ul li{
     padding: .5rem;
@@ -181,6 +174,10 @@ ul{
     padding-bottom: 1rem;
 }
 
+.footer__quicklinks ul {
+    padding: 0;
+}
+
 .footer__quicklinks ul li{
     padding: .5rem 0;
 }
@@ -193,6 +190,9 @@ ul{
     padding-bottom: 1rem;
 }
 
+.footer__reachus ul{
+    padding: 0;
+}
 .footer__reachus ul li{
     padding: .5rem 0;
 }
@@ -207,69 +207,41 @@ ul{
     font-size: .8rem;
 }
 
-@media (max-width:768px){
+@media (min-width:992px){
 
-    .header{
-        position: sticky;
-        top: 0px;
-        background: #d4c3c3;
- 
-    }
-
-    .nav__button{
-        display: contents;
-        font-size: 2rem;
-        color: #fff;
-    }
-    .nav__tittle img{
-        display: none;
-    }
-    .nav__links{
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 100vw;
-        height: 30vh;
-        position: absolute;
-        top: 100%;
-        right: 0px;
-        background: #d4c3c39f;
-        display: none;
-
-    }
-    .nav__links--violet{
-        background: #d4c3c3;
-    }
-    .nav__input{
-        display: none;
-    }
-
-    #menu:checked + .nav__links{
+    .nav__tittle{
+        color: #f2f2f2;
         display: flex;
+        align-items: center;
     }
-    
 
+    .nav__tittle h1{
+        display: contents;
+        text-shadow: 3px 3px 3px #000;
+    } 
+
+    .nav__link{
+        padding: 1rem;
+    }
 
     .main__text{
-        align-self: center;
+        align-self: flex-start;
     }
     
     .footer{
-        grid-template-areas: "section1 section1"
-                            "section2 section3"
-                            "section4 section4";
-        grid-template-rows: 20% 74% 6%;
-        justify-content: center;
+        grid-template-areas: "section1 section2 section3"
+                        "section4 section4 section4";
+        grid-template-rows: 94% 6%;
+        justify-content: flex-start;
+        padding-left: 15px;
+        
+    }
+    .footer__socialnetworks img{
+        display: inline-block;
     }
 
-    .footer__socialnetworks img{
-        display: none;
-    }
     .footer__socialnetworks ul{
-        justify-content: center;
+        justify-content: flex-start;
+        
     }
-    .footer__socialnetworks p{
-        text-align: center;
-    }
-    
 }

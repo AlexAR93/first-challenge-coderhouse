@@ -1,7 +1,7 @@
 
 .latest-collection{
-    height: 100vh;
-    padding-top: 6rem;
+    height: 90.8vh;
+    padding-top: 5rem;
 }
 
 .latest-collection h2{
@@ -9,10 +9,8 @@
 }
 
 .latest-collection__container{
-    width: 592px;
-    margin: 2rem auto;
+    width: 100%;
     overflow: hidden;
-
 }
 
 .latest-collection__slider{
@@ -45,19 +43,19 @@
 
 .sportswear{
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
     justify-items: center;
 }
 
 .sportswear__card{
-    width: 500px;
-    height: 500px;
+    width: 350px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 1rem;
+    /* margin: 1rem; */
     border-radius: 27px;
     color: #fff;
     text-shadow: 2px 2px 5px #000;
@@ -76,8 +74,8 @@
 }
 
 .sportswear__card button{
-    margin: 1rem;
-    padding: 16px;
+    /* margin: 1rem; */
+    /* padding: 16px; */
     border: none;
     border-radius: 12px;
 }
@@ -89,22 +87,21 @@
     transform: scale(.95);
 }
 
-@media (max-width:768px){
+@media (min-width:768px){
     .sportswear__card{
-        width: 350px;
-        height: 350px;
+        width: 500px;
+        height: 500px;
     }
     .latest-collection__container{
-        width: 100%;
-        margin: auto;
+        width: 592px;
+        margin: 2rem auto;
     }
 }
 
-@media (max-width:1200px){
+@media (min-width:1200px){
     .sportswear{
-        grid-template-columns: 100%;
-        grid-template-rows: 1fr 1fr;
-
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
     }
 
 }
