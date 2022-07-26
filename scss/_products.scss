@@ -1,0 +1,103 @@
+@import 'var.scss';
+.main-store{
+    .latest-collection{
+        height: 100vh;
+        &__container{
+            width: 100%;
+            overflow: hidden;
+            
+            @keyframes slide{
+                0%{margin-left: 0%;}
+                30%{margin-left: 0%;}
+            
+                35%{margin-left: -100%;}
+                65%{margin-left: -100%;}
+            
+                70%{margin-left: -200%;}
+                100%{margin-left: -200%;}
+            }
+            
+        }
+        &__slider{
+            display: flex;
+            padding: 0;
+            width: 300%;
+            animation: slide 6s infinite alternate ease-in-out;
+            li{
+                width: 100%;    
+                img{
+                    width: 100%;
+                }            
+            }
+        }
+    }
+    
+    
+    /*sportswear*/
+    
+    .sportswear{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        &__card{
+            width: 350px;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 27px;
+            color: $colorText;
+            text-shadow: $textShadow;     
+            button{
+                border: none;
+                border-radius: 12px;
+            }
+            button:hover{
+                box-shadow: $buttonShadowCard;
+            }
+            
+            button:active{
+                transform: scale(.95);
+            }
+        }
+        &__card:hover{
+            box-shadow: $cardShadow;
+        }
+        &__male{
+            background: url('./../assets/images/card-male.jpg');
+        }
+        
+        &__female{
+            background: url('./../assets/images/card-female.jpg');
+        }
+    }
+}
+
+@media (min-width:768px){
+    .main-store{
+        .latest-collection{
+            &__container{
+                width: 592px;
+                margin: 2rem auto;
+            }
+        }
+        .sportswear{
+            &__card{
+                width: 500px;
+                height: 500px;
+            }
+        }
+    }
+}
+
+@media (min-width:1200px){
+    .main-store{
+        .sportswear{
+            grid-template-columns: 50% 50%;
+            grid-template-rows: auto;
+        }
+    }
+
+}

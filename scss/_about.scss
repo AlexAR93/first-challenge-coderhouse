@@ -1,0 +1,27 @@
+@import 'var.scss';
+
+.main-info{
+    height: 100vh;
+    background: $backgroundMainInfo;   
+    &__about{
+        color: $colorText;
+        font-size: 1.3rem;
+    }
+    &__location{
+        iframe{
+            width:100%;
+            height:250px;
+        }
+    }
+}
+
+@media (min-width:768px){
+    .main-info{
+        &__location{
+            iframe{
+                width:600px;
+                height:450px;
+            }
+        }
+    }
+}
