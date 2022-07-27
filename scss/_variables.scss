@@ -1,14 +1,23 @@
 // General
 $generalFont:'Poiret One', cursive;
-$colorTextNav:#f2f2f2;
-$colorTittleHover:#fff;
-$colorNav: #D4C3C3;
 $colorHover-a:#ff0;
 $colorText:#fff;
-$colorIconReachUs:#c7a7e6;
-$backgroundFooter:#6C757D;
 $textShadow:3px 3px 3px #000;
+$text-base:1.5rem;
+$text-large:3.3rem;
+$text-medium:2rem;
+$text-small:.8rem;
+
+//nav
+$colorTittleHover:#fff;
+$colorNav: #D4C3C3;
+
+//brands
 $borderBrands:#c0ccda84 solid 1.5px;
+
+//footer
+$backgroundFooter:#6C757D;
+$colorIconReachUs:#c7a7e6;
 
 //about
 $backgroundMainInfo:#26212A;

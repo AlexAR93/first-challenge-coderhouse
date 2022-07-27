@@ -1,24 +1,21 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+@import 'normalize.scss';
 @import 'products.scss';
 @import 'about.scss';
 @import 'contact.scss';
 @import 'blog.scss';
-@import 'var.scss';
 
 .body{
     font-family: $generalFont;
-    ul{
-        list-style: none;
-    }
     .header{
         .navbar{
             &__tittle{
-                text-decoration: none;
                 img{
                     width: 75px;
                     padding-right: 1rem;
                 }
                 h1{
-                    color: $colorTextNav;
                     display: none;
                 }
             }
@@ -28,9 +25,8 @@
             &-nav{
                 &__link{
                     a{
-                        text-decoration: none;
-                        color: $colorTextNav;
-                        font-size: 1.5rem;
+                       
+                        font-size: $text-base;
                     }
                     a:hover{
                         color: $colorHover-a;
@@ -56,24 +52,22 @@
             background: url('./../assets/images/background.jpg');
             background-size: cover;
             background-position: top;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include flex(column,center,center);
             padding: 0 18%;
         }  
         &__item{
             padding: .1rem 0;
         }
         &__text{
-            align-self: center;
             text-align: center;
             color: $colorText;
             text-shadow: $textShadow;
             h2{
-                font-size: 4rem;
+                font-size: $text-large;
+                font-weight: bold;
             }
             p{
-                font-size: 1.5rem;
+                font-size: $text-base;
             }
         }
         &__button{
@@ -89,15 +83,11 @@
 
     .brands{
         height: 148px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(row,center,center);
         &__border{
             height: 136px;
             width: 95vw;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex(row,center,center);
             flex-wrap: wrap;
             border: $borderBrands;
         }
@@ -119,8 +109,7 @@
         justify-content: center;
         color: $colorText;
         a{
-            text-decoration: none;
-            color: $colorText;
+            @include a-style;
         }
         a:hover{
             color: $colorHover-a;
@@ -131,16 +120,13 @@
         &__socialnetworks{
             grid-area: section1;
             p{
-                text-align: center;
-                margin: 0;
+                text-align: center;              
             }
             img{
                 display: none;
             }
             ul{
-                padding: 0;
-                display: flex;
-                justify-content: center;
+                @include flex(row,none,center);
                 li{
                     padding: .5rem;
                 }
@@ -153,7 +139,6 @@
                 padding-bottom: 1rem;
             }
             ul {
-                padding: 0;
                 li{
                     padding: .5rem 0;
                 }
@@ -166,7 +151,6 @@
                 padding-bottom: 1rem;
             }
             ul{
-                padding: 0;
                 li{
                     padding: .5rem 0;
                     i{
@@ -178,7 +162,7 @@
         &__copyright{
             grid-area: section4;
             margin-top: 0;
-            font-size: .8rem;
+            font-size: $text-small;
         }
     }
 }
@@ -189,8 +173,7 @@
         .header{
             .navbar{
                 &__tittle{
-                    display: flex;
-                    align-items: center;
+                    @include flex(row,center,start);
                     h1{
                         display: contents;
                         text-shadow: $textShadow;
@@ -205,15 +188,15 @@
         }
     
         .main{
-            &__text{
-                align-self: flex-start;
+            &__home{
+                align-items: flex-start;
             }
         }
         
         .footer{
             grid-template-areas: "section1 section2 section3"
                             "section4 section4 section4";
-            grid-template-rows: 94% 6%;
+            grid-template-rows: 93% 7%;
             justify-content: flex-start;
             padding-left: 15px;
             &__socialnetworks{
@@ -222,7 +205,6 @@
                 }
                 ul{
                     justify-content: flex-start;
-                    
                 }
             }
         }

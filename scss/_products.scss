@@ -1,4 +1,4 @@
-@import 'var.scss';
+
 .main-store{
     .latest-collection{
         height: 100vh;
@@ -43,10 +43,7 @@
         &__card{
             width: 350px;
             height: 350px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            @include flex(column,center,center);
             border-radius: 27px;
             color: $colorText;
             text-shadow: $textShadow;     

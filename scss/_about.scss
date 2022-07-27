@@ -1,11 +1,17 @@
-@import 'var.scss';
+
 
 .main-info{
     height: 100vh;
     background: $backgroundMainInfo;   
     &__about{
         color: $colorText;
-        font-size: 1.3rem;
+        h2{
+            font-size: $text-large;
+            font-weight: bold;
+        }
+        p{
+            font-size: $text-base;
+        }
     }
     &__location{
         iframe{
