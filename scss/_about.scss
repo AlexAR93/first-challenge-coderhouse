@@ -6,11 +6,11 @@
     &__about{
         color: $colorText;
         h2{
-            font-size: $text-large;
+            font-size: $text-medium;
             font-weight: bold;
         }
         p{
-            font-size: $text-base;
+            font-size: $text-small;
         }
     }
     &__location{

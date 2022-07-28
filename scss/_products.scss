@@ -46,9 +46,9 @@
             @include flex(column,center,center);
             border-radius: 27px;
             color: $colorText;
-            text-shadow: $textShadow;     
+            text-shadow: $textShadow;  
+            text-align: center;
             button{
-                border: none;
                 border-radius: 12px;
             }
             button:hover{

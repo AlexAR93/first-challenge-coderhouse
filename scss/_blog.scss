@@ -1,7 +1,7 @@
 
 
 .main-blog{
-    margin-top: 89.4px;
+    margin-top: 89.2px;
     display: grid;
     grid-template-columns: 100%;
     .carousel-item{
@@ -35,7 +35,7 @@
                     padding: .5rem 0;
                     a{
                         @include a-style;
-                        font-size: $text-base;
+                        font-size: $text-small;
                     }
                     a:hover{
                         color: $colorHover-a;
