@@ -21,13 +21,3 @@
     }
 }
 
-@media (min-width:768px){
-    .main-info{
-        &__location{
-            iframe{
-                width:600px;
-                height:450px;
-            }
-        }
-    }
-}

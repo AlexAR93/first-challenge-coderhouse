@@ -1,5 +1,7 @@
 
 .main-store{
+
+    //latest collection
     .latest-collection{
         height: 100vh;
         &__container{
@@ -41,23 +43,20 @@
         grid-template-rows: 1fr 1fr;
         justify-items: center;
         &__card{
-            width: 350px;
-            height: 350px;
+            margin:0 .3rem;
+            min-width: 318px;
+            min-height: 318px;
+            max-width: 350px;
+            max-height: 350px;
             @include flex(column,center,center);
             border-radius: 27px;
             color: $colorText;
             text-shadow: $textShadow;  
             text-align: center;
-            button{
-                border-radius: 12px;
-            }
             button:hover{
                 box-shadow: $buttonShadowCard;
             }
             
-            button:active{
-                transform: scale(.95);
-            }
         }
         &__card:hover{
             box-shadow: $cardShadow;
@@ -72,29 +71,4 @@
     }
 }
 
-@media (min-width:768px){
-    .main-store{
-        .latest-collection{
-            &__container{
-                width: 592px;
-                margin: 2rem auto;
-            }
-        }
-        .sportswear{
-            &__card{
-                width: 500px;
-                height: 500px;
-            }
-        }
-    }
-}
 
-@media (min-width:1200px){
-    .main-store{
-        .sportswear{
-            grid-template-columns: 50% 50%;
-            grid-template-rows: auto;
-        }
-    }
-
-}

@@ -1,0 +1,16 @@
+/*BRANDS*/
+
+.brands{
+    height: 148px;
+    @include flex(row,center,center);
+    &__border{
+        height: 136px;
+        width: 95vw;
+        @include flex(row,center,center);
+        flex-wrap: wrap;
+        border: $borderBrands;
+    }
+    &__item{
+        padding: 0 1.5rem;
+    }
+}

@@ -1,0 +1,28 @@
+/* MAIN */
+    
+.main{
+    height: 100vh;  
+    &__home{
+        height: 100%;
+        background: url('./../assets/images/background.jpg');
+        background-size: cover;
+        background-position: top;
+        @include flex(column,center,center);
+        padding: 0 18%;
+    }  
+    &__item{
+        padding: .1rem 0;
+    }
+    &__text{
+        text-align: center;
+        color: $colorText;
+        text-shadow: $textShadow;
+        h2{
+            font-size: $text-large;
+            font-weight: bold;
+        }
+        p{
+            font-size: $text-base;
+        }
+    }
+}

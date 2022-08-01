@@ -1,0 +1,69 @@
+    /*FOOTER*/
+
+    .footer{
+        background: $backgroundFooter;
+        display: grid;
+        grid-template-areas: "section1 section1"
+                                "section2 section3"
+                                "section4 section4";
+        grid-template-rows: 20% 74% 6%;
+        grid-gap: 0 3rem;
+        justify-content: center;
+        color: $colorText;
+        a{
+            @include a-style;
+        }
+        a:hover{
+            color: $colorHover-a;
+        }
+        &__section{
+            margin-top: 3rem;
+        }
+        &__socialnetworks{
+            grid-area: section1;
+            p{
+                text-align: center;              
+            }
+            img{
+                display: none;
+            }
+            ul{
+                @include flex(row,none,center);
+                li{
+                    padding: .5rem;
+                }
+            }
+        }
+        &__quicklinks{
+            grid-area: section2;
+            text-align: center;
+            h2{
+                padding-bottom: 1rem;
+            }
+            ul {
+                li{
+                    padding: .5rem 0;
+                }
+                
+            }
+        }
+        &__reachus{
+            grid-area: section3;
+            h2{
+                padding-bottom: 1rem;
+            }
+            ul{
+                li{
+                    padding: .5rem 0;
+                    i{
+                        color: $colorIconReachUs;
+                     }
+                }
+            }
+        }
+        &__copyright{
+            grid-area: section4;
+            margin-top: 0;
+            font-size: $text-extraSmall;
+        }
+    }
