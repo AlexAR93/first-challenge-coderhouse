@@ -80,6 +80,7 @@
 
         //FOOTER
         .footer{
+            height: 29vh;
             grid-template-areas: "section1 section2 section3"
                             "section4 section4 section4";
             grid-template-rows: 93% 7%;

@@ -304,6 +304,7 @@
       grid-row: 2/3;
       grid-column: 1/2; }
   .body .footer {
+    height: 29vh;
     grid-template-areas: "section1 section2 section3" "section4 section4 section4";
     grid-template-rows: 93% 7%;
     justify-content: flex-start;
