@@ -8,15 +8,27 @@
 .header .navbar__tittle:hover {
   color: #fff; }
 
-.header .navbar-nav__link a {
-  font-size: 1.5rem; }
+.header .navbar-nav__link {
+  width: fit-content; }
+  .header .navbar-nav__link a {
+    font-size: 1.5rem; }
+  .header .navbar-nav__link a:hover {
+    color: #ff0; }
 
-.header .navbar-nav__link a:hover {
-  color: #ff0; }
+.header .navbar-nav__link::before {
+  content: " ";
+  display: block;
+  width: 10px;
+  height: 10px; }
 
-.header .navbar-nav__link:hover {
-  transform: scale(0.95);
-  transition: transform 1s; }
+.header .navbar-nav__link:hover::before {
+  width: 100%;
+  border-bottom: 2px solid #ff0;
+  transition: width .5s; }
+
+.header .navbar-nav__link:active {
+  transform: scale(0.9);
+  transition: transform .2s; }
 
 .header .navbar--color {
   background: #D4C3C3; }
@@ -277,7 +289,7 @@
       display: contents;
       text-shadow: 3px 3px 3px #000; }
   .body .header .navbar-nav__link {
-    padding: 1rem; }
+    padding: 0 1rem; }
   .body .main__home {
     align-items: flex-start; }
   .body .main-blog {
