@@ -92,7 +92,8 @@
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 1fr 1fr;
-    justify-items: center; }
+    justify-items: center;
+    overflow: hidden; }
     .main-store .sportswear__card {
       margin: 0 .3rem;
       min-width: 318px;
@@ -115,6 +116,16 @@
       background: url("./../assets/images/card-male.webp"); }
     .main-store .sportswear__female {
       background: url("./../assets/images/card-female.webp"); }
+
+.shopping-cart__container {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: fit-content;
+  z-index: 1100; }
+  .shopping-cart__container a {
+    font-size: 2rem;
+    padding: .5rem 1rem; }
 
 .main-info {
   height: 100vh;
