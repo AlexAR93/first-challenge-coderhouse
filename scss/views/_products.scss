@@ -2,7 +2,7 @@
 .main-store{
     //latest collection
     .latest-collection{
-        height: 100vh;
+        height: 90.6vh;
         &__container{
             width: 100%;
             overflow: hidden;
@@ -42,6 +42,7 @@
         grid-template-rows: 1fr 1fr;
         justify-items: center;
         overflow: hidden;
+        padding: .8rem;
         &__card{
             margin:0 .3rem;
             min-width: 318px;

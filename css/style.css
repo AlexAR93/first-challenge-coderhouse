@@ -61,7 +61,7 @@
 .main-store {
   /*sportswear*/ }
   .main-store .latest-collection {
-    height: 100vh; }
+    height: 90.6vh; }
     .main-store .latest-collection__container {
       width: 100%;
       overflow: hidden; }
@@ -93,7 +93,8 @@
     grid-template-columns: 100%;
     grid-template-rows: 1fr 1fr;
     justify-items: center;
-    overflow: hidden; }
+    overflow: hidden;
+    padding: .8rem; }
     .main-store .sportswear__card {
       margin: 0 .3rem;
       min-width: 318px;
@@ -128,7 +129,6 @@
     padding: .5rem 1rem; }
 
 .main-info {
-  height: 100vh;
   background: #26212A; }
   .main-info__about {
     color: #fff; }
@@ -141,16 +141,14 @@
     width: 100%;
     height: 250px; }
 
-.main-contact {
-  height: 100vh; }
-  .main-contact .form__textarea textarea {
-    height: 150px;
-    resize: none; }
-  .main-contact .form__textarea textarea::-webkit-scrollbar {
-    display: none; }
+.main-contact .form__textarea textarea {
+  height: 150px;
+  resize: none; }
+
+.main-contact .form__textarea textarea::-webkit-scrollbar {
+  display: none; }
 
 .main-blog {
-  margin-top: 89.2px;
   display: grid;
   grid-template-columns: 100%; }
   .main-blog .carousel-item h5 {
