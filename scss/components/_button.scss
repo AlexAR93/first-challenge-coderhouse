@@ -1,6 +1,14 @@
-.btn{
-    border-radius: 12px !important;
+.btn-change{
+    border: none;
+    border-radius: 20px;
+    background: $btn-color;
+    width: fit-content;
 }
-.btn:active{
+
+.btn-change:hover{
+    background: #cfcfcf;
+} 
+
+.btn-change:active{
     transform: scale(.95);
 }

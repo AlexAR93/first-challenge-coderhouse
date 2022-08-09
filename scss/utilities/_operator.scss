@@ -5,7 +5,7 @@
     justify-content: $justify;
 }
 
-@mixin a-style{
-    text-decoration: none;
-    color: $colorText;
+@mixin normalizePM{
+    margin: 0;
+    padding: 0;
 }

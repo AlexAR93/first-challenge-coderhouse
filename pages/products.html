@@ -7,7 +7,9 @@
     <meta name="keywords" content="wolf, wolf store, sportswear, sport clothing, clothing, sportswear store, sport clothing store, latest collection, latest sportswear collection, latest sport clothing collection">
     <meta name="description" content="choose and get the best quality sportswear, we work with the best brands">
     <link rel="shortcut icon" href="./../assets/images/logo.webp" type="image/x-icon">
+    <!-- fontawesome icons -->
     <script src="https://kit.fontawesome.com/b6118f8b9b.js" crossorigin="anonymous"></script>
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
@@ -21,6 +23,7 @@
 </head>
 <body class="body">
     <header class="header sticky-top">
+        <!-- bootstrap navbar, but with some modifications of mine -->
         <nav class="navbar navbar-expand-lg navbar--color">
             <div class="container-fluid">
                 <a href="./../index.html" class="navbar__tittle">
@@ -33,7 +36,7 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <button class="btn btn-outline-light" type="submit">Search</button>
                     </form>
                     <ul class="navbar-nav mb-2 mb-lg-0 ps-2 ps-lg-0">
                         <li class="navbar-nav__link"><a href="./about.html">About</a></li>
@@ -46,6 +49,7 @@
         </nav>
     </header>
     <main class="main-store">
+        <!-- latest collection slide -->
         <section class="latest-collection d-flex flex-column justify-content-center">
             <h2 class="text-center">latest collection</h2>
             <div class="latest-collection__container">
@@ -63,20 +67,22 @@
             </div>
         </section>
 
+        <!-- sportswear section -->
         <section class="sportswear">
+            <!-- sportswear cards and use of aos library-->
             <div data-aos="fade-down-right" class="sportswear__card sportswear__male mb-5">
                 <h2>men's sportswear</h2>
                 <p>Discover the new collection of sportswear clothing for men</p>
-                <button type="button" class="btn btn-primary p-3 m-1" data-bs-toggle="modal" data-bs-target="#exampleModalMen">Shop Now</button>
+                <button type="button" class="btn-change p-3 m-1" data-bs-toggle="modal" data-bs-target="#exampleModalMen">Shop Now</button>
   
                 
             </div>
             <div data-aos="fade-down-left" class="sportswear__card sportswear__female mb-5">
                 <h2>women's sportswear</h2>
                 <p>Discover the new collection of sportswear clothing for women</p>
-                <button type="button" class="btn btn-primary p-3 m-1" data-bs-toggle="modal" data-bs-target="#exampleModalWomen">Shop Now</button>
+                <button type="button" class="btn-change p-3 m-1" data-bs-toggle="modal" data-bs-target="#exampleModalWomen">Shop Now</button>
             </div>
-            <!-- Modal Men -->
+            <!-- Modal Men component bootstrap-->
             <div class="modal fade" id="exampleModalMen" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl">
                     <div class="modal-content bg-light">
@@ -87,7 +93,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Nike pants</h5>
                                         <p>$5.000</p>
-                                        <button class="btn btn-primary p-2 px-4 m-1">Add</button>
+                                        <button class="btn-change p-2 px-4 m-1">Add</button>
                                     </div>
                                 </div>
                             </div>
@@ -97,7 +103,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Nike shorts</h5>
                                         <p>$2.500</p>
-                                        <button class="btn btn-primary p-2 px-4 m-1">Add</button>
+                                        <button class="btn-change p-2 px-4 m-1">Add</button>
                                     </div>
                                 </div>
                             </div>
@@ -107,7 +113,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Nike t-shirt</h5>
                                         <p>$3.000</p>
-                                        <button class="btn btn-primary p-2 px-4 m-1">Add</button>
+                                        <button class="btn-change p-2 px-4 m-1">Add</button>
                                     </div>
                                 </div>
                             </div>
@@ -117,7 +123,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Nike pants</h5>
                                         <p>$5.000</p>
-                                        <button class="btn btn-primary p-2 px-4 m-1">Add</button>
+                                        <button class="btn-change p-2 px-4 m-1">Add</button>
                                     </div>
                                 </div>
                             </div>
@@ -127,7 +133,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Nike shorts</h5>
                                         <p>$2.500</p>
-                                        <button class="btn btn-primary p-2 px-4 m-1">Add</button>
+                                        <button class="btn-change p-2 px-4 m-1">Add</button>
                                     </div>
                                 </div>
                             </div>
@@ -137,7 +143,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Nike t-shirt</h5>
                                         <p>$3.000</p>
-                                        <button class="btn btn-primary p-2 px-4 m-1">Add</button>
+                                        <button class="btn-change p-2 px-4 m-1">Add</button>
                                     </div>
                                 </div>
                             </div>
@@ -147,7 +153,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Nike pants</h5>
                                         <p>$5.000</p>
-                                        <button class="btn btn-primary p-2 px-4 m-1">Add</button>
+                                        <button class="btn-change p-2 px-4 m-1">Add</button>
                                     </div>
                                 </div>
                             </div>
@@ -157,7 +163,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Nike shorts</h5>
                                         <p>$2.500</p>
-                                        <button class="btn btn-primary p-2 px-4 m-1">Add</button>
+                                        <button class="btn-change p-2 px-4 m-1">Add</button>
                                     </div>
                                 </div>
                             </div>
@@ -167,18 +173,18 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Nike t-shirt</h5>
                                         <p>$3.000</p>
-                                        <button class="btn btn-primary p-2 px-4 m-1">Add</button>
+                                        <button class="btn-change p-2 px-4 m-1">Add</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="modal-footer justify-content-center">
-                            <button type="button" class="btn btn-primary p-3" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn-change p-3" data-bs-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Modal Women -->
+            <!-- Modal Women component bootstrap -->
             <div class="modal fade" id="exampleModalWomen" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl">
                     <div class="modal-content">
@@ -189,7 +195,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Nike pants</h5>
                                         <p>$5.000</p>
-                                        <button class="btn btn-primary p-2 px-4 m-1">Add</button>
+                                        <button class="btn-change p-2 px-4 m-1">Add</button>
                                     </div>
                                 </div>
                             </div>
@@ -199,7 +205,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Nike t-shirt</h5>
                                         <p>$2.500</p>
-                                        <button class="btn btn-primary p-2 px-4 m-1">Add</button>
+                                        <button class="btn-change p-2 px-4 m-1">Add</button>
                                     </div>
                                 </div>
                             </div>
@@ -209,7 +215,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Nike pants</h5>
                                         <p>$6.000</p>
-                                        <button class="btn btn-primary p-2 px-4 m-1">Add</button>
+                                        <button class="btn-change p-2 px-4 m-1">Add</button>
                                     </div>
                                 </div>
                             </div>
@@ -219,7 +225,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Nike pants</h5>
                                         <p>$5.000</p>
-                                        <button class="btn btn-primary p-2 px-4 m-1">Add</button>
+                                        <button class="btn-change p-2 px-4 m-1">Add</button>
                                     </div>
                                 </div>
                             </div>
@@ -229,7 +235,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Nike t-shirt</h5>
                                         <p>$2.500</p>
-                                        <button class="btn btn-primary p-2 px-4 m-1">Add</button>
+                                        <button class="btn-change p-2 px-4 m-1">Add</button>
                                     </div>
                                 </div>
                             </div>
@@ -239,7 +245,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Nike pants</h5>
                                         <p>$6.000</p>
-                                        <button class="btn btn-primary p-2 px-4 m-1">Add</button>
+                                        <button class="btn-change p-2 px-4 m-1">Add</button>
                                     </div>
                                 </div>
                             </div>
@@ -249,7 +255,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Nike pants</h5>
                                         <p>$5.000</p>
-                                        <button class="btn btn-primary p-2 px-4 m-1">Add</button>
+                                        <button class="btn-change p-2 px-4 m-1">Add</button>
                                     </div>
                                 </div>
                             </div>
@@ -259,7 +265,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Nike t-shirt</h5>
                                         <p>$2.500</p>
-                                        <button class="btn btn-primary p-2 px-4 m-1">Add</button>
+                                        <button class="btn-change p-2 px-4 m-1">Add</button>
                                     </div>
                                 </div>
                             </div>
@@ -269,47 +275,53 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Nike pants</h5>
                                         <p>$6.000</p>
-                                        <button class="btn btn-primary p-2 px-4 m-1">Add</button>
+                                        <button class="btn-change p-2 px-4 m-1">Add</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="modal-footer justify-content-center">
-                            <button type="button" class="btn btn-primary p-3" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn-change p-3" data-bs-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-    </main>
-    <article class="shopping-cart">
-        <div class="shopping-cart__container">
-            <a class="btn btn-primary" href="#">
-                <i class="fa-solid fa-cart-shopping"></i>
-            </a>
-        </div>
-    </article>
-    <article class="brands">
-        <div class="brands__border">
-            <div class="brands__item">
-                <img src="./../assets/images/nike.webp" alt="log-nike">
-            </div>
-            <div class="brands__item">
-                <img src="./../assets/images/adidas.webp" alt="log-adidas">
-            </div>
-            <div class="brands__item">
-                <img src="./../assets/images/puma.webp" alt="log-puma">
-            </div>
-            <div class="brands__item">
-                <img src="./../assets/images/dual-power.webp" alt="log-dual-power">
-            </div>
-            <div class="brands__item">
-                <img src="./../assets/images/reebok.webp" alt="log-reebok">
-            </div>
-        </div>
-    </article>
 
+         <!-- brands we work with-->
+         <section class="brands">
+            <div class="brands__border">
+                <div class="brands__item">
+                    <img src="./../assets/images/nike.webp" alt="log-nike">
+                </div>
+                <div class="brands__item">
+                    <img src="./../assets/images/adidas.webp" alt="log-adidas">
+                </div>
+                <div class="brands__item">
+                    <img src="./../assets/images/puma.webp" alt="log-puma">
+                </div>
+                <div class="brands__item">
+                    <img src="./../assets/images/dual-power.webp" alt="log-dual-power">
+                </div>
+                <div class="brands__item">
+                    <img src="./../assets/images/reebok.webp" alt="log-reebok">
+                </div>
+            </div>
+        </section>
+
+        <!-- shopping cart button -->
+        <article class="shopping-cart">
+            <div class="shopping-cart__container">
+                <a class="btn-change" href="#">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </div>
+        </article>
+
+    </main>
+ <!-- general footer -->
     <footer class="footer">
+        <!-- socialnetworks -->
         <div class="footer__section footer__socialnetworks">
             <img src="./../assets/images/logo.webp" alt="log">
             <p>look at our social networks</p>
@@ -325,15 +337,17 @@
                     </li>
             </ul>
         </div>
+        <!-- quicklinks in my pág -->
         <div class="footer__section footer__quicklinks">
             <h2>Quick Links</h2>
             <ul>
-                <li><a href="#" target="_blank">Products</a></li>
+                <li><a href="#">Products</a></li>
                 <li><a href="./blog.html" target="_blank">Blog</a></li>
-                <li><a href="./about.html" target="_blank">About</a></li>
-                <li><a href="./contact.html" target="_blank">Contact</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
             </ul>
         </div>
+        <!-- reachus section -->
         <div class="footer__section footer__reachus">
             <h2>Reach us</h2>
             <ul>
@@ -343,13 +357,16 @@
                 <li><a href="https://goo.gl/maps/HVft8JvTdSumd6FNA" target="_blank"><i class="fa-solid fa-location-dot"></i> C. 24 3127, B1884 EUD, Provincia de Buenos Aires</a></li>
             </ul>
         </div>
+        <!-- copyright section -->
         <div class="footer__section footer__copyright">
             <p>© 2022 WOLF All rights reserved</p>
         </div>
     </footer>
-    
+
+     <!-- script bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
+    <!-- scripts AOS library -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();

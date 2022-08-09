@@ -3,6 +3,7 @@
 .main-blog{
     display: grid;
     grid-template-columns: 100%;
+    // text in carousel
     .carousel-item{
         h5{
             font-size: $text-medium;
@@ -33,7 +34,6 @@
                 li{
                     padding: .5rem 0;
                     a{
-                        @include a-style;
                         font-size: $text-small;
                     }
                     a:hover{

@@ -3,23 +3,19 @@
     .footer{
         background: $backgroundFooter;
         display: grid;
-        grid-template-areas: "section1 section1"
-                                "section2 section3"
-                                "section4 section4";
-        grid-template-rows: 20% 74% 6%;
-        grid-gap: 0 3rem;
+        grid-template-areas: "section1"
+                                "section2"
+                                "section3"
+                                "section4";     
+        grid-gap: 2rem 0;
         justify-content: center;
+        align-items: center;
         color: $colorText;
-        a{
-            @include a-style;
-        }
         a:hover{
             color: $colorHover-a;
         }
-        &__section{
-            margin-top: 3rem;
-        }
         &__socialnetworks{
+            margin-top: 3rem;
             grid-area: section1;
             p{
                 text-align: center;              
@@ -48,6 +44,7 @@
             }
         }
         &__reachus{
+            text-align: center;
             grid-area: section3;
             h2{
                 padding-bottom: 1rem;

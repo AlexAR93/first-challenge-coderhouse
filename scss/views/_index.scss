@@ -1,28 +1,35 @@
 /* MAIN */
     
 .main{
-    height: 100vh;  
-    &__home{
-        height: 100%;
+    .home{
+        height: 100vh;
         background: url('./../assets/images/background.webp');
         background-size: cover;
         background-position: top;
         @include flex(column,center,center);
         padding: 0 18%;
+        &__text{
+            @include flex(column,center,center);
+            text-align: center;
+            &-container{
+                color: $colorText;
+                text-shadow: $textShadow;
+                h2{
+                    font-size: $text-large;
+                    font-weight: bold;             
+                }
+                p{
+                    font-size: $text-base;
+                }
+            }
+            a{
+                color: $colorText2;
+                font-weight: 600;
+            }
+            a:hover{
+                color: inherit;
+            }
+            
+        }
     }  
-    &__item{
-        padding: .1rem 0;
-    }
-    &__text{
-        text-align: center;
-        color: $colorText;
-        text-shadow: $textShadow;
-        h2{
-            font-size: $text-large;
-            font-weight: bold;
-        }
-        p{
-            font-size: $text-base;
-        }
-    }
 }

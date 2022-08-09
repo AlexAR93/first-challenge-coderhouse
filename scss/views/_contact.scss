@@ -1,5 +1,6 @@
 
 .main-contact{
+    // mofify textarea scroll
     .form__textarea {
         textarea{
             height: 150px;
@@ -7,7 +8,6 @@
         }
         textarea::-webkit-scrollbar{display: none;}
     }
-
 }
 
 

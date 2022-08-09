@@ -1,15 +1,14 @@
 * {
-    padding: 0;
-    margin: 0;
+    @include normalizePM;
     box-sizing: border-box;
     .body{
         font-family: $generalFont;
         a {
-            @include a-style; 
+            text-decoration: none;
+            color: inherit;
         }
         ul{
-            margin: 0;
-            padding: 0;
+            @include normalizePM;
             list-style: none;
         }
         img {
@@ -17,13 +16,7 @@
             max-width: 100%;
         }
         h1,h2,h3,h4,h5,h6,p{
-            margin: 0;
-            padding: 0;
-        }
-        button,
-        input,
-        select {
-        margin: 0;
+            @include normalizePM;
         }
     }
 }

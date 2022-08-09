@@ -6,6 +6,7 @@
                 padding-right: 1rem;
             }
             h1{
+                color: $colorText;
                 display: none;
             }
         }
@@ -16,7 +17,7 @@
             &__link{
                 width: fit-content;
                 a{
-                   
+                   color: $colorText;
                     font-size: $text-base;
                 }
                 a:hover{

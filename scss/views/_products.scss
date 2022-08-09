@@ -3,10 +3,11 @@
     //latest collection
     .latest-collection{
         height: 90.6vh;
+        color: $colorText2;
         &__container{
             width: 100%;
             overflow: hidden;
-            
+            // slider animation
             @keyframes slide{
                 0%{margin-left: 0%;}
                 30%{margin-left: 0%;}
@@ -70,19 +71,20 @@
             background: url('./../assets/images/card-female.webp');
         }
     }
-}
-
-.shopping-cart{
-    &__container{
-        position: fixed;
-        bottom: 30px;
-        right: 30px;
-        width: fit-content;
-        z-index: 1100;
-        a{
-            font-size: 2rem;
-            padding: .5rem 1rem;
+// shopping cart button
+    .shopping-cart{
+        &__container{
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: fit-content;
+            z-index: 1100;
+            a{
+                font-size: 2rem;
+                padding: .5rem 1rem;
+            }
         }
     }
 }
+
 
