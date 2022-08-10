@@ -3,10 +3,13 @@
     border-radius: 20px;
     background: $btn-color;
     width: fit-content;
+    box-shadow: 1px 1px 3px 1px #222;
 }
 
 .btn-change:hover{
-    background: #cfcfcf;
+    background: $btn-colorHover;
+    box-shadow: 0px 1px 1px 1px #484848;
+    transition: all .1s;
 } 
 
 .btn-change:active{
