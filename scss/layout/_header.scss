@@ -24,6 +24,7 @@
                     color: $colorHover-a;
                 } 
             }
+            // animation links
             &__link::before{
                 content: " ";
                 display: block;

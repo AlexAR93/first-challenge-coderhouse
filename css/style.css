@@ -142,7 +142,16 @@
     font-size: 2rem;
     font-weight: bold; }
   .main-info__about p {
-    font-size: 1.1rem; }
+    font-size: 1.1rem;
+    font-weight: 600; }
+  .main-info__about img {
+    width: 750px;
+    border-radius: 27px; }
+
+.main-info__location h2 {
+  color: #222;
+  font-size: 2rem;
+  font-weight: bold; }
 
 .main-info__location iframe {
   width: 100%;
