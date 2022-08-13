@@ -146,13 +146,8 @@
 
 .main-info__location iframe {
   width: 100%;
-  height: 250px;
+  height: 350px;
   border-radius: 33px; }
-
-.main-info__location iframe:hover {
-  height: 550px;
-  border-radius: 0;
-  transition: all .6s; }
 
 .main-contact .form__textarea textarea {
   height: 150px;
@@ -293,7 +288,9 @@
     height: 450px; }
   .main-info__location iframe:hover {
     width: 700px;
-    height: 550px; } }
+    height: 550px;
+    border-radius: 0;
+    transition: all .6s; } }
 
 @media (min-width: 992px) {
   .body .header .navbar__tittle {

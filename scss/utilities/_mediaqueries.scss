@@ -28,6 +28,8 @@
             iframe:hover{
                 width: 700px;
                 height: 550px;
+                border-radius: 0;
+                transition: all .6s;
             }
         }
     }
