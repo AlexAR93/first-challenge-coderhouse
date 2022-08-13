@@ -149,6 +149,11 @@
   height: 250px;
   border-radius: 33px; }
 
+.main-info__location iframe:hover {
+  height: 550px;
+  border-radius: 0;
+  transition: all .6s; }
+
 .main-contact .form__textarea textarea {
   height: 150px;
   resize: none; }
@@ -288,9 +293,7 @@
     height: 450px; }
   .main-info__location iframe:hover {
     width: 700px;
-    height: 550px;
-    border-radius: 0;
-    transition: all .3s; } }
+    height: 550px; } }
 
 @media (min-width: 992px) {
   .body .header .navbar__tittle {
@@ -352,3 +355,9 @@
 .form-control:focus {
   transform: scale(0.98);
   transition: all .3s; }
+
+.card:hover {
+  box-shadow: 0 0 3px 1px #222;
+  background: #f7f7f7;
+  transform: scale(1.03);
+  transition: all .5s; }

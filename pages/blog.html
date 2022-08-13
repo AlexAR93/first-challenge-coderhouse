@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="./../css/style.css">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- AOS library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>Blog - WOLF</title>
 </head>
 <body class="body">
@@ -47,7 +50,7 @@
     </header>
     <main class="main-blog">
         <!-- bootstrap carousel -->
-        <section id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <section id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false" data-aos="flip-right" data-aos-duration="800">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -78,19 +81,19 @@
 
         <!-- posts -->
         <section class="posts">
-            <div class="posts__container" id="post1">
+            <div class="posts__container" id="post1" data-aos="fade-down">
                 <img src="./../assets/images/photosport.webp" alt="post1">
                 <h2>05 SEPT The importance of excercising</h2>
                 <p>The importance of exercising as we all know is very important for physical and mental health, and here we will tell you in detail</p>
                 <button class="btn btn-secondary mt-3">Continue reading</button>
             </div>
-            <div class="posts__container" id="post2">
+            <div class="posts__container" id="post2" data-aos="fade-down">
                 <img src="./../assets/images/post2.webp" alt="img-post2">
                 <h2>15 AUG Comfort when exercising with quality clothing</h2>
                 <p>The importance of exercising with quality clothing is much and we will tell you.</p>
                 <button class="btn btn-secondary mt-3">Continue reading</button>
             </div>
-            <div class="posts__container" id="post3">
+            <div class="posts__container" id="post3" data-aos="fade-down">
                 <img src="./../assets/images/post3.webp" alt="img-post3">
                 <h2>3 AUG Exercises to stretch the hamstrings</h2>
                 <p>Sports specialists always recommend that a series of stretches be performed before and after each training session so that the muscles do not suffer later. In addition, it helps prevent injuries and promotes flexibility of the body. One part of the body that causes the most problems after training is the hamstrings, for this reason we wanted to prepare some simple exercises to stretch the hamstrings.</p>
@@ -98,7 +101,7 @@
             </div>
         </section>
         <!-- nav blog -->
-        <section class="blog-links">
+        <section class="blog-links" data-aos="fade-down">
             <div class="blog-links__recent-post blog-links__all">
                 <h2>Recent Posts</h2>
                 <ul class="p-0">
@@ -164,5 +167,11 @@
 
     <!-- script bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <!-- scripts AOS library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
