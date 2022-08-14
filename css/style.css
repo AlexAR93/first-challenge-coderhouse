@@ -129,8 +129,8 @@
   .main-store .shopping-cart__container {
     position: fixed;
     bottom: 30px;
-    right: 30px;
     width: fit-content;
+    right: 30px;
     z-index: 1100; }
     .main-store .shopping-cart__container a {
       font-size: 2rem;
@@ -261,7 +261,7 @@
   .footer__copyright {
     grid-area: section4;
     margin-top: 0;
-    font-size: 0.8rem; }
+    font-size: 0.9rem; }
 
 * {
   margin: 0;
@@ -330,13 +330,20 @@
     grid-template-rows: 93% 7%;
     grid-gap: 0 3rem;
     justify-content: flex-start;
-    padding-left: 15px; }
-    .body .footer__socialnetworks img {
-      display: inline-block; }
-    .body .footer__socialnetworks ul {
-      justify-content: flex-start; }
+    padding-left: 90px;
+    overflow: hidden; }
+    .body .footer__section {
+      margin-top: 1.3rem; }
+    .body .footer__socialnetworks {
+      margin-top: 0rem; }
+      .body .footer__socialnetworks img {
+        display: inline-block; }
+      .body .footer__socialnetworks ul {
+        justify-content: flex-start; }
     .body .footer__reachus {
-      text-align: start; } }
+      text-align: start; }
+    .body .footer__copyright {
+      margin-bottom: .3rem; } }
 
 @media (min-width: 1200px) {
   .main-store .sportswear {
@@ -367,3 +374,12 @@
   background: #f7f7f7;
   transform: scale(1.03);
   transition: all .5s; }
+
+.up__container {
+  position: fixed;
+  bottom: 30px;
+  width: fit-content;
+  left: 30px; }
+  .up__container a {
+    font-size: 2rem;
+    padding: .5rem 1rem; }

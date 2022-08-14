@@ -1,0 +1,10 @@
+.up{
+    &__container{
+        @include button-fixed;
+        left: 30px;
+        a{
+            font-size: 2rem;
+            padding: .5rem 1rem;
+        }
+    }
+}

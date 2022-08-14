@@ -82,7 +82,6 @@
                 grid-column: 1/2;
             }
         }
-        
 
         //FOOTER
         .footer{
@@ -91,8 +90,13 @@
             grid-template-rows: 93% 7%;
             grid-gap: 0 3rem;
             justify-content: flex-start;
-            padding-left: 15px;
+            padding-left: 90px;
+            overflow: hidden;
+            &__section{
+                margin-top: 1.3rem;
+            } 
             &__socialnetworks{
+                margin-top: 0rem;
                 img{
                     display: inline-block;
                 }
@@ -102,6 +106,9 @@
             }
             &__reachus{
                 text-align: start;
+            }
+            &__copyright{
+                margin-bottom: .3rem;
             }
         }
     }

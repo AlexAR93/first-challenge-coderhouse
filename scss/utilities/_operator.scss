@@ -9,3 +9,9 @@
     margin: 0;
     padding: 0;
 }
+
+@mixin button-fixed{
+    position: fixed;
+    bottom: 30px;
+    width: fit-content;
+}
